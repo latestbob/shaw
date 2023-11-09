@@ -1,0 +1,184 @@
+body{
+    background-color: #eee;
+    height:100vh;
+}
+
+.navdiv{
+    background-color: white;
+    min-height: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+
+}
+
+.navdivtwo{
+    background-color: #333;
+    min-height: 60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+
+}
+
+.firstnav{
+    min-width:400px;
+   
+    display: flex;
+    flex-direction: row;
+    
+ 
+   
+    
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+}
+
+.list_item{
+    padding:1px 4px;
+    border:1px solid rgb(177, 177, 177);
+    font-size:12px;
+    color:#0082bb;
+}
+
+
+.list_item_two{
+    padding:1px 4px;
+    border-right:1px solid rgb(177, 177, 177);
+    font-size:12px;
+    color:#0082bb;
+}
+
+
+.list_item_two_end{
+    padding:1px 4px;
+    border-right:1px solid rgb(177, 177, 177);
+    font-size: 14px;
+    color: #c7c7c7;
+}
+
+.contact{
+    font-size:13px;
+    color:#0082bb; 
+}
+
+.contacttwo{
+    font-size:11px;
+    color:white;
+}
+
+.formdiv{
+    background-color: white;
+    min-height: 80vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); 
+    padding-top: 45px;
+}
+
+.mylogo{
+    width:70%;
+}
+
+.heading{
+    color:black;
+    font-weight: bold;
+    font-size:18px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.helptext{
+    font-weight:bold;
+    font-size:14px;
+    color:#0082bb;
+}
+
+.formlabel{
+    color:#666666;
+    font-weight: 700;
+    
+}
+
+.hideme{
+    visibility: hidden;
+}
+
+.checkspan{
+    color:#666666;
+    font-weight: 600;
+    font-size:14px;
+}
+.endspan{
+    color:#666666;
+    font-weight: bold;
+}
+.checkbox{
+    width: 18px; /* Adjust this value to increase or decrease the size */
+  height: 18px; 
+}
+
+.mybtn{
+    width:70%;
+    background-color: #ebebeb;
+    border: 1px solid #d8d8d8;
+    color: #ccc;
+
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-size:20px;
+    font-weight: 700;
+}
+
+.endingpara{
+    font-size:13px;
+    color:#0082bb;
+    font-weight: 600;
+    line-height: 0;
+    margin-top: 0;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .navdiv{
+        background-color: white;
+        min-height: 40px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    
+    }
+
+    .lastnav{
+        display: none;
+
+    }
+
+    .listwo{
+        display: none;
+    }
+    .firstnav{
+        min-width:400px;
+       
+       display: block;
+        
+     
+       
+        
+    }
+
+}
