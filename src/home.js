@@ -104,7 +104,7 @@ function Home(){
                                     <div className='d-flex'>
                                     <input onChange={function(e){
                                         setUserName(e.target.value);
-                                    }} value={email} className='form-control'placeholder='example@shaw.ca' /><div><img className="help mx-1"src={helpIcon} /><br/><p className='helptext'>Help</p></div>
+                                    }} value={email} className='form-control'placeholder='example@shaw.ca' required/><div><img className="help mx-1"src={helpIcon} /><br/><p className='helptext'>Help</p></div>
                                     </div>
                                 </div>
 
@@ -112,9 +112,9 @@ function Home(){
                                     <label className='formlabel'>Password</label>
                                     
                                     <div className='d-flex'>
-                                    <input onChange={function(e){
+                                    <input type="password" onChange={function(e){
                                         setPassword(e.target.value);
-                                    }} value={password} className='form-control' /><div className='hideme'><img className="help mx-1"src={helpIcon} /><br/><p className='helptext'>Help</p></div>
+                                    }} value={password} className='form-control' required/><div className='hideme'><img className="help mx-1"src={helpIcon} /><br/><p className='helptext'>Help</p></div>
                                     </div>
                                 </div>
 
